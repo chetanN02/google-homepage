@@ -1,0 +1,250 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+header{
+    display: flex;
+    justify-content: flex-end;
+    color: #222;
+}
+
+nav {
+    margin: 20px;
+}
+
+nav ul {
+    display: flex;
+    min-height: 40px;
+    list-style: none;
+}
+
+@media (min-width: 1441px) {
+    nav ul {
+        font-size: 22px;
+    }   
+}
+
+nav li {
+    min-height: 20px;
+    padding: 0 10px;
+    float: left;
+    display: flex;
+    align-items: center;
+    font-size: .8em;
+}
+
+
+nav a{
+    color: #616161;
+    text-decoration-line: none;
+}
+
+a:hover {
+    text-decoration-line: underline;
+}
+
+#Apps {
+    opacity: 0.5;
+}
+
+#Apps:hover {
+    opacity: 1;
+}
+
+#sign-in {
+    color: seashell;
+    font-weight: bold;
+    border: 1px solid #4285f4;
+    background: #4285f4;
+    outline: none;
+    padding: 2px 12px;
+    line-height: 28px;
+    border-radius: 3px;
+}
+
+#sign-in:hover{
+    text-decoration: none;
+    box-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+
+#center-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 5.5%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#logo {
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+@media (min-width: 320px) and (max-width: 425px) {
+    #gmail,#images{
+        display: none;
+    }
+    #logo img{
+        width: 100%;
+    }
+}
+#search-box {
+    width: 582px;
+    height: 44px;
+    overflow: hidden;
+    border: 1px solid #dfe1e5;
+    border-radius: 24px;
+    margin: 3% auto;
+    box-shadow: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#search-box:hover {
+    box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+    border-color: rgba(223,225,229,0);
+}
+
+
+input[type="search"]{
+    width: 87%;
+    height: 34px;
+    font-size: 16px;
+    margin: 0 auto;
+    outline: none;
+    border: none;
+    color: rgba(0,0,0,.87);
+    -webkit-tap-highlight-color: transparent;
+}
+
+#search-icon {
+    margin: 0 3%;
+    opacity: 0.55;
+}
+
+#voice-icon {
+    margin: 0 3%;
+    vertical-align: middle;
+    width: 14px;
+    height: 22px;
+}
+
+#buttons {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+input[type=submit] {
+    background-color: #f2f2f2;
+    border: 1px solid #f2f2f2;
+    border-radius: 4px;
+    color: #5F6368;
+    font-family: arial,sans-serif;
+    font-size: .8em;
+    margin: 1em .25em;
+    padding: 0 1.2em;
+    line-height: 27px;
+    height: 36px;
+    text-align: center;
+    outline: none;
+}
+
+input[type="submit"]:hover {
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    background-color: #f8f8f8;
+    border: 1px solid #c6c6c6;
+    color: #222;
+}
+
+#languages {
+    text-align: center;
+    width: 90%;
+    margin: 1% auto;
+    font-size: .8em;
+}
+
+#languages a {
+    margin: .7%;
+    text-decoration: none;
+    color: #4B59B6;
+}
+
+#languages a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    position: fixed;
+    right: 0;
+    left: 0;    
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top: 1px solid #e4e4e4;
+    background-color: #F2F2F2;
+    color: #5f6368;
+    font-size: .9em;
+}
+footer #country {
+    padding: .8%;
+}
+footer #down {
+    padding:.8%;
+    border-top: 1px solid #e4e4e4;
+}
+
+footer a {
+    color: #5f6368;
+    text-decoration-line: none;
+    padding-right: 25px;
+}
+footer .float-left{
+    float: left;
+}
+
+footer .float-right {
+    float: right;
+}
+
+
+@media (max-width:767px) {
+    #search-box {
+        width: 100%;   
+    }
+    #search-icon,#voice-icon{
+        display: none;
+    }    
+    #languages span{
+        text-align: center;
+        display: block;
+    }    
+
+    footer #country{
+        display: none;
+    }
+    footer #down {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        text-align: center;
+    }
+    footer a{
+        padding: 0 4px;
+    }
+    .float-left a,.float-right a{
+        text-align: center;
+        display: inline-block;
+    }
+}
